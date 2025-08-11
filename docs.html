@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExampleLib Documentation</title>
+  <style>
+    body {
+      color: rgba(0, 0, 0, 0.85);
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZOC3tDjn-4iOnIhdi__XsVflR5E8yHVQP7g&s') center/cover no-repeat;
+      background-attachment: fixed;
+      font-family: "Montserrat", sans-serif;
+      margin: 0;
+    }
+    
+
+    /* Sidebar */
+    .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 230px;
+      position: absolute;
+      top:0px;
+      height: 100%;
+      padding-bottom:30%;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(12px);
+      box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      padding: 20px;
+      color: #04AA6D;
+    }
+
+    .sidebar a {
+      display: block;
+      color: black;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition-duration: 1000ms;
+      
+    }
+
+    .sidebar a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+
+    .sidebar a:hover:not(.active) {
+      background: rgba(255,255,255,0.2);
+      color: white;
+    }
+
+    /* Main Content */
+    .content {
+      margin-left: 230px;
+      padding: 20px 30px;
+      min-height: 100vh;
+      background: rgba(255,255,255,0.2);
+      backdrop-filter: blur(10px);
+      position: absolute;
+      top:0;
+      
+    }
+
+    .content h1 {
+      color: #333;
+      transition-duration: 500ms;
+    }
+    .content h1:hover {
+        color:rgb(40, 215, 40);
+    }
+
+    .code {
+      background: rgba(0,0,0,0.8);
+      color: limegreen;
+      padding: 10px;
+      border-radius: 5px;
+      font-family: monospace;
+      white-space: pre-wrap;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a {
+        float: left;
+      }
+      .content {
+        margin-left: 0;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+    }
+  </style>
+</head>
+<body>
+    
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    
+    <a class="active" href="#intro">Introduction</a>
+    <a href="#install">Installation</a>
+    <a href="#usage">Usage</a>
+    <a href="#api">API Reference</a>
+    <a href="#examples">Examples</a>
+  </div>
+
+  <!-- Main Documentation Content -->
+  <div class="content">
+    <h1 id="intro">Introduction</h1>
+    <p><strong>ExampleLib</strong> is a fictional JavaScript/Python library designed to demonstrate how to create beautiful documentation using HTML and CSS. It features a responsive layout with a glass-style sidebar.</p>
+
+    <h1 id="install">Installation</h1>
+    <p>Install via npm:</p>
+    <div class="code">npm install examplelib</div>
+    <p>Or with Python pip:</p>
+    <div class="code">pip install examplelib</div>
+
+    <h1 id="usage">Usage</h1>
+    <p>Basic usage example:</p>
+    <div class="code">
+import examplelib
+
+# Initialize
+lib = examplelib.Client()
+
+# Do something amazing
+lib.run()
+    </div>
+
+    <h1 id="api">API Reference</h1>
+    <p>Full API documentation is available in the API section.</p>
+
+    <h1 id="examples">Examples</h1>
+    <p>Here’s how to make a quick request with ExampleLib:</p>
+    <div class="code">
+examplelib.fetch_data("https://api.example.com")
+    </div>
+  </div>
+</body>
+</html>
