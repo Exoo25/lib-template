@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    color:rgb(0, 0, 0,0.6);
+    background: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/simple-white-blue-violet-3d-element-website-background-wallpaper-free-image.jpeg?w=600&quality=80');
+    background-size:100%, auto;
+    padding:10px;
+    gap:20px;
+    font-family: "Montserrat", sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: fit-content;
+}
+a {
+    text-decoration: none;
+    padding:5px;
+}
+nav {
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    height: 35px;
+    width:230px;
+    display:flex;
+    justify-self: center;
+    text-align: center;
+    
+}
+.bash::before {
+    content: "$>";
+}
+h1 {
+    text-align: center  ;
+}
+    @media (max-width: 600px) {
+      body {
+        font-size: 18px;
+        padding:10px;
+        background-size: 100%, 100%;
+        grid-template-columns: 0fr 0fr;
+        max-height: 100%;
+        background: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/simple-white-blue-violet-3d-element-website-background-wallpaper-free-image.jpeg?w=600&quality=80');
+      }
+      main {
+        grid-template-columns: auto;
+      }
+      .card {
+        height: 100%;
+      }
+      
+    }
+main {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding:20px;
+    gap:20px;
+}
+.card {
+    background: rgba(255,255,255,0.2);
+    padding:10px;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    height:fit-content;
+    transition-duration: 200ms;
+}
+
+.card:hover {
+    transform: rotate(10deg)
+    ;
+}
+.crad_button {
+    background:rgba(255,255,255,0.3);
+    border:none;
+    padding:8px;
+    font-size: 12px;
+    color:rgb(0, 0, 0,0.6);
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    transition-duration: 200ms;
+}
+.code {
+    background: rgba(0,0,0,0.5);
+    color:limegreen;
+    font-family: monospace;
+    padding:5px;
+    width:fit-content;
+    line-break:normal;
+    border-radius: 5px;
+}
+.crad_button:hover {
+    transform: scale(1.15)
+    translateX(50px)
+
+}
+footer {
+    display: flexbox;
+    justify-self: center;
+    text-align: center;
+    background: rgba(255,255,255,0.2);
+    padding:10px;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+}
